@@ -1,0 +1,23 @@
+@import "./../../styles/variables.scss";
+
+.Header {
+    padding: 1rem;
+    top: 0;
+    position: static;
+    border-radius: 0.8rem;
+    margin-bottom: 2rem;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 100%;
+
+    ul {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: row;
+        gap: 2rem;
+        font-size: 1rem;
+    }
+}

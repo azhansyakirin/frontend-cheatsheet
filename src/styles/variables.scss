@@ -1,0 +1,18 @@
+$lora: "Lora", serif;
+$poorstory: "Poor Story", system-ui;
+$jetbrains: "Jetbrains Mono", monospace;
+
+@font-face {
+    font-family: $lora ;
+    src: url("./../assets/fonts/Lora-Regular.ttf");
+}
+
+@font-face {
+    font-family: $poorstory;
+    src: url("./../assets/fonts/PoorStory-Regular.ttf");
+}
+
+@font-face {
+    font-family: $jetbrains;
+    src: url("./../assets/fonts/JetbrainsMono-Regular.ttf");
+}

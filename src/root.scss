@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "./styles/variables.scss";
+
+html {
+    scroll-behavior: smooth;
+}
+
+#root {
+    min-height: 100vh;
+    min-width: 100vw;
+    width: 100%;
+
+    font-family: 'Jetbrains Mono';
+    font-weight: 300;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    place-items: center;
+    min-width: 320px;
+    min-height: 100vh;
+}
+
+code {
+    font-family: $jetbrains;
+}
