@@ -35,7 +35,7 @@ export const Dashboard = () => {
                 <div className="my-8 flex items-center">
                     <p className="text-left font-jetbrains text-textLight dark:text-textDark">
                         <span className="inline-flex items-center space-x-2">
-                            <IconsRenderer type="terminal" />
+                            <IconsRenderer type="terminal" styles="size-6" />
                             Code with React Js, Tailwind Css, Sass, React-Syntax-Highlighter
                         </span>
                     </p>
