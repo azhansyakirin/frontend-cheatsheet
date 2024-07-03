@@ -2,7 +2,7 @@ import { useState, useContext } from "react"
 import SyntaxHighlighter from "react-syntax-highlighter"
 import { atomOneDark } from "react-syntax-highlighter/dist/esm/styles/hljs"
 import { docco } from "react-syntax-highlighter/dist/esm/styles/hljs"
-import { ThemeContext } from "../../utils/context/ThemeContext"
+import { ThemeContext } from "../../utils/context/ThemeProvider"
 import { IconsRenderer } from "../IconsRenderer"
 import classNames from "classnames"
 
@@ -38,15 +38,18 @@ export const CodeBlock = ({
                 lineNumber.remove()
             })
 
-            navigator.clipboard
-                .writeText(block)
-                .then(() => {
-                    console.log(`Text copied!\n\n${block}`)
-                    setCopyToClipboard("checkmark")
-                    setTimeout(() => setCopyToClipboard("clipboard"), 2000)
-                })
-                .catch(err => console.error("Failed to copy text"))
+            block = tempElement.textContent
         }
+
+        navigator.clipboard
+            .writeText(block)
+            .then(() => {
+                console.log(`Text copied!\n\n${block}`)
+                setCopyToClipboard("checkmark")
+                setTimeout(() => setCopyToClipboard("clipboard"), 2000)
+            })
+            .catch(err => console.error("Failed to copy text"))
+
     }
 
     return (

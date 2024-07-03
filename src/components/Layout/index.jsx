@@ -1,8 +1,9 @@
 import { useContext } from "react"
+import classNames from "classnames"
 import { Header } from "../Header"
 import { Quickmenu } from "../Quickmenu"
-import css from "./Layout.module.scss"
 import { ThemeContext } from "../../utils/context/ThemeProvider"
+import css from "./Layout.module.scss"
 
 export const Layout = ({ children, ...props }) => {
 
@@ -22,6 +23,7 @@ export const Layout = ({ children, ...props }) => {
                 {children}
             </div>
             <Quickmenu />
+            <div className={classNames("text-textLight dark:text-textDark", css.footnote)}>All rights reserved | Made with ❤️ by <a className="hover:text-iconLight dark:hover:text-spanDark" href="https://azhansyakirin.dev/" target="_blank"> Azhan Syakirin</a></div>
         </main>
     )
 }

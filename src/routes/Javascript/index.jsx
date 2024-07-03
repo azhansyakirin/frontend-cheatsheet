@@ -1,15 +1,13 @@
-import { useRef, useEffect } from "react";
-import { Layout } from "../../components/Layout";
-import { CodeBlock } from "../../components/CodeBlock";
-import { Pill } from "../../components/Pill";
-import { variableExample, conditionalsExample } from "../../data/codeblockdata";
-import css from "./Javascript.module.scss";
+import { Layout } from "../../components/Layout"
+import { CodeBlock } from "../../components/CodeBlock"
+import { Pill } from "../../components/Pill"
+import { variableDeclaration, variableExample, conditionalsExample } from "../../data/codeblockdata"
+import css from "./Javascript.module.scss"
+import { IconsRenderer } from "../../components/IconsRenderer"
 
-const Javascript = ({
+export const Javascript = ({
     pageName,
     pageDescription,
-    variableDeclaration,
-    extraProps,
 }) => {
     let dummyText =
         "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien.";
@@ -66,7 +64,7 @@ const Javascript = ({
                     </div>
                     <div className={css.descriptionWrapper}>
                         <p className="text-textLight dark:text-textDark flex items-center gap-4">
-                            {tagIcon} Code with React Js, Tailwind Css, Sass, and React
+                            {<IconsRenderer type="terminal" styles="w-6" />} Code with React Js, Tailwind Css, Sass, and React
                             Syntax Highlighter
                         </p>
                     </div>
@@ -128,7 +126,7 @@ const Javascript = ({
                         reference="debugging"
                         index={"Console-" + 0}
                         blockTitle="Debugging"
-                        text={`console.table("🍟")`}
+                        text={`console.log("🍟")`}
                         description={dummyText}
                         customClassnames="w-full"
                     />
@@ -137,5 +135,3 @@ const Javascript = ({
         </Layout>
     );
 };
-
-export default Javascript;

@@ -1,18 +1,12 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-@import "./../../styles/color.scss";
-@import "./../../styles/font.scss";
+@import "./../../styles/variables.scss";
 
 .layoutLeft {
     text-align: left;
     width: 50%;
     padding: 0 1rem;
 
-    h1 {
-        @apply text-5xl;
-        color: $primary;
+    @media(max-width: 575px) {
+        width: 100%;
     }
 }
 

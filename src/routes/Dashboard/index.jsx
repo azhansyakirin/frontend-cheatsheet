@@ -35,7 +35,7 @@ export const Dashboard = () => {
                 <div className="my-8 flex items-center">
                     <p className="text-left font-jetbrains text-textLight dark:text-textDark">
                         <span className="inline-flex items-center space-x-2">
-                            <IconsRenderer type="terminal"/>
+                            <IconsRenderer type="terminal" />
                             Code with React Js, Tailwind Css, Sass, React-Syntax-Highlighter
                         </span>
                     </p>
@@ -43,15 +43,15 @@ export const Dashboard = () => {
                 <div className="my-4 rounded-2xl bg-foregroundLight dark:bg-foregroundDark py-3">
                     <ul className="p-1 flex flex-col md:flex-row gap-4 md:gap-8 justify-center items-center">
                         {Array.isArray(pathRouteMap) &&
-                        pathRouteMap.map((obj, i)=> (
-                            <Link
-                                key={i}
-                                to={obj.to}
-                                className="px-12 py-2 rounded-2xl bg-elementLight hover:bg-backgroundLight dark:bg-elementDark text-textLight dark:text-textDark dark:hover:text-spanDark cursor-pointer"
-                            >
-                                {obj.label}
-                            </Link>
-                        ))
+                            pathRouteMap.map((obj, i) => (
+                                <Link
+                                    key={i}
+                                    to={obj.to}
+                                    className="px-10 py-2 rounded-2xl text-center bg-elementLight hover:bg-backgroundLight dark:bg-elementDark text-textLight dark:text-textDark dark:hover:text-spanDark cursor-pointer"
+                                >
+                                    {obj.label}
+                                </Link>
+                            ))
 
                         }
                     </ul>

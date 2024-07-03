@@ -10,7 +10,10 @@ export const ThemeProvider = ({ children }) => {
         localStorage.setItem('theme', theme)
     }, [theme])
 
-    const toggleTheme = () => setTheme((prevTheme) => (prevTheme === 'light' ? 'dark' : 'light'))
+    const toggleTheme = () => {
+        console.log('triggered')
+        setTheme((prevTheme) => (prevTheme === 'light' ? 'dark' : 'light'))
+    }
 
     return (
         <ThemeContext.Provider value={{ theme, toggleTheme }}>

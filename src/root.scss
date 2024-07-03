@@ -19,6 +19,40 @@ html {
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+
+    --text-color: #{$textLight};
+    --background-color: #{$backgroundLight};
+    --icon-color: #{$iconLight};
+    --element-color: #{$elementLight};
+    --foreground-color: #{$foregroundLight};
+    --span-color: #{$spanLight};
+}
+
+[data-theme="dark"] {
+    --text-color: #{$textDark};
+    --background-color: #{$backgroundDark};
+    --icon-color: #{$iconDark};
+    --element-color: #{$elementDark};
+    --foreground-color: #{$foregroundDark};
+    --span-color: #{$spanDark};
+}
+
+@layer components {
+    ::-webkit-scrollbar {
+        @apply w-[0.4rem] h-0;
+    }
+
+    ::-webkit-scrollbar-track {
+        @apply bg-backgroundLight dark:bg-backgroundDark;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        @apply bg-iconLight dark:bg-spanDark;
+    }
+
+    ::selection {
+        @apply text-elementLight bg-iconLight dark:text-gray-700 dark:bg-spanDark;
+    }
 }
 
 body {
@@ -28,6 +62,8 @@ body {
     place-items: center;
     min-width: 320px;
     min-height: 100vh;
+    color: var(--text-color);
+    background-color: var(--background-color);
 }
 
 code {

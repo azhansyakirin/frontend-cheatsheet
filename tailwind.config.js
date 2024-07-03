@@ -15,7 +15,7 @@ export default {
                 'iconLight': '#B0A695',
                 'backgroundLight': '#F3EEEA',
                 'spanLight': '#B0A695',
-                'textDark': 'F0F2F584',
+                'textDark': '#F0F2F584',
                 'foregroundDark': '#292929',
                 'elementDark': '#262626',
                 'iconDark': '#FFC600',

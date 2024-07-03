@@ -10,7 +10,7 @@ export const ComingSoon = ({ }) => {
                 </div>
                 <div className="my-8">
                     <p className="text-left font-lora text-lg md:text-2xl text-textLight dark:text-textDark">
-                        “Quality apps need quality times. Stay tuned!”
+                        “Quality apps needs longer timeline to build. Stay tuned!”
                     </p>
                     <p className="text-left font-lora text-lg md:text-2xl text-textLight dark:text-textDark italic">
                         -developer

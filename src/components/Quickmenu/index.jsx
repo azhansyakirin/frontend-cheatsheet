@@ -23,10 +23,11 @@ export const Quickmenu = () => {
                                 href={obj.route}
                                 target="_blank"
                                 className="cursor-pointer"
+                                title={obj.title}
                             >
                                 <IconsRenderer
                                     type={obj.icon}
-                                    styles="size-6 text-textLight dark:text-textDark dark:hover:text-spanDark"
+                                    styles="size-6 text-iconLight hover:text-textLight dark:text-textDark dark:hover:text-spanDark"
                                 />
                             </a>
                         </li>
