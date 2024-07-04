@@ -4,10 +4,6 @@
 
 @import "./styles/variables.scss";
 
-$lora: "Lora", serif;
-$poorstory: "Poor Story", sans-serif;
-$jetbrains: "Jetbrains Mono", monospace;
-
 @font-face {
     font-family: "Lora", serif ;
     src: url("./../assets/fonts/Lora-Regular.ttf");
@@ -32,7 +28,7 @@ html {
     min-width: 100vw;
     width: 100%;
 
-    font-family: $jetbrains;
+    font-family: "JetBrains Mono";
     font-weight: 300;
     font-synthesis: none;
     text-rendering: optimizeLegibility;
@@ -86,5 +82,5 @@ body {
 }
 
 code {
-    font-family: $jetbrains;
+    font-family: "JetBrains Mono";
 }
