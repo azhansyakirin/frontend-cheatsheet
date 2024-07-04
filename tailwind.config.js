@@ -23,9 +23,9 @@ export default {
                 'spanDark': '#FFC600',
             },
             fontFamily: {
-                'lora': 'Lora',
-                'poorstory': 'Poor Story',
-                'jetbrains': 'Jetbrains Mono'
+                'lora': ['Lora'],
+                'poorstory': ['Poor Story'],
+                'jetbrains': ['Jetbrains Mono']
             },
         },
     },
