@@ -47,7 +47,7 @@ export const Javascript = ({
                     </div>
                     <div className={css.descriptionWrapper}>
                         <p className="text-textLight dark:text-textDark flex items-center gap-4">
-                            {<IconsRenderer type="terminal" styles="w-6" />} Code with React Js, Tailwind Css, Sass, and React
+                            <IconsRenderer type="terminal" styles="w-16 md:w-6" /> Code with React Js, Tailwind Css, Sass, and React
                             Syntax Highlighter
                         </p>
                     </div>
