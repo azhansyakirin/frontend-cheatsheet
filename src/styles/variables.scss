@@ -1,22 +1,3 @@
-$lora: "Lora", serif;
-$poorstory: "Poor Story", sans-serif;
-$jetbrains: "Jetbrains Mono", monospace;
-
-@font-face {
-    font-family: $lora ;
-    src: url("./../assets/fonts/Lora-Regular.ttf");
-}
-
-@font-face {
-    font-family: $poorstory;
-    src: url("./../assets/fonts/PoorStory-Regular.ttf");
-}
-
-@font-face {
-    font-family: $jetbrains;
-    src: url("./../assets/fonts/JetBrainsMono-Regular.ttf");
-}
-
 $textLight: #776B5D;
 $foregroundLight: #EBE3D5;
 $elementLight: #F2F2F2;

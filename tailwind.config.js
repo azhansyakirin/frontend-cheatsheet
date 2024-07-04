@@ -25,7 +25,7 @@ export default {
             fontFamily: {
                 'lora': ['Lora'],
                 'poorstory': ['Poor Story'],
-                'jetbrains': ['Jetbrains Mono']
+                'jetbrains': ['JetBrains Mono']
             },
         },
     },

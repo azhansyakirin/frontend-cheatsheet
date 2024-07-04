@@ -4,6 +4,25 @@
 
 @import "./styles/variables.scss";
 
+$lora: "Lora", serif;
+$poorstory: "Poor Story", sans-serif;
+$jetbrains: "Jetbrains Mono", monospace;
+
+@font-face {
+    font-family: "Lora", serif ;
+    src: url("./../assets/fonts/Lora-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Poor Story", sans-serif;
+    src: url("./../assets/fonts/PoorStory-Regular.ttf");
+}
+
+@font-face {
+    font-family: "JetBrains Mono", monospace;
+    src: url("./../assets/fonts/JetBrainsMono-Regular.ttf");
+}
+
 html {
     scroll-behavior: smooth;
 }
