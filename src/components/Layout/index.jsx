@@ -23,7 +23,7 @@ export const Layout = ({ children, ...props }) => {
                 {children}
             </div>
             <Quickmenu />
-            <div className={classNames("text-textLight dark:text-textDark", css.footnote)}>All rights reserved | Made with ❤️ by <a className="hover:text-iconLight dark:hover:text-spanDark" href="https://azhansyakirin.dev/" target="_blank"> Azhan Syakirin</a></div>
+            <div className={classNames("text-textLight dark:text-textDark", css.footnote)}><p>All rights reserved | Made with ❤️ by <a className="hover:text-iconLight dark:hover:text-spanDark" href="https://azhansyakirin.dev/" target="_blank"> Azhan Syakirin</a></p></div>
         </main>
     )
 }
