@@ -24,7 +24,10 @@ const router = createBrowserRouter([
   },
   {
     path: "/javascript",
-    element: withSuspense(<Javascript/>),
+    element: withSuspense(<Javascript
+    pageName="JavaScript"
+    pageDescription="This is a Javascript basic cheatsheet for developer reference."
+    />),
     errorElement: <NotFound />
   },
   {
