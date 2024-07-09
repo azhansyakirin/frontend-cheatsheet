@@ -90,7 +90,7 @@ export const CodeBlock = ({
                     codeTagProps={{
                         style: {
                             fontFamily: "JetBrains Mono",
-                            fontSize: "0.9rem",
+                            fontSize: "0.8rem",
                         }
                     }}
                     showLineNumbers
