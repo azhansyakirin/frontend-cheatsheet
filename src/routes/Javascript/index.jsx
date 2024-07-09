@@ -42,9 +42,11 @@ export const Javascript = ({
                         </span>{" "}
                         FOR DEV
                     </h1>
-                    <div className={css.descriptionWrapper}>
-                        <p className="text-textLight dark:text-textDark">{pageDescription}</p>
-                    </div>
+                    {pageDescription &&
+                        <div className={css.descriptionWrapper}>
+                            <p className="text-textLight dark:text-textDark">{pageDescription}</p>
+                        </div>
+                    }
                     <div className={css.descriptionWrapper}>
                         <p className="text-textLight dark:text-textDark flex items-center gap-4">
                             <IconsRenderer type="terminal" styles="w-16 md:w-6" /> Code with React Js, Tailwind Css, Sass, and React
